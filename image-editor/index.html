@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor with JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+    <div class="editor">
+        <div class="toolbar">
+            <div class="toolbar-item">
+                <input type="file" name="" id="imageFileInput">
+            </div>
+            <div class="toolbar-item">
+                <label class="toolbar-label" for="brightness">Brightness</label>
+                <input class="toolbar-input" type="range" name="" id="brightness"  min="0" max="200">
+            </div>
+            <div class="toolbar-item">
+                <label class="toolbar-label" for="saturation">Saturation</label>
+                <input class="toolbar-input" type="range" name="" id="saturation"  min="0" max="200">
+            </div>
+            <div class="toolbar-item">
+                <label class="toolbar-label" for="blur">Blur</label>
+                <input class="toolbar-input" type="range" name="" id="blur"  min="0" max="25">
+            </div>
+            <div class="toolbar-item">
+                <label class="toolbar-label" for="inversion">Inversion</label>
+                <input class="toolbar-input" type="range" name="" id="inversion"  min="0" max="100">
+            </div>
+            <div class="toolbar-item">
+                <label class="toolbar-label" for="contrast">Contrast</label>
+                <input class="toolbar-input" type="range" name="" id="contrast"  min="0" max="200">
+            </div>
+            <div class="toolbar-item">
+                <label class="toolbar-label" for="grayscale">Grayscale</label>
+                <input class="toolbar-input" type="range" name="" id="grayscale"  min="0" max="100">
+            </div>
+        </div>
+        <div class="image-area">
+            <canvas id="canvas" height="500" width="500"></canvas>
+        </div>
+    </div>
+</body>
+</html>
